@@ -1,0 +1,14 @@
+
+.click_button {
+    height: 50px;
+    width: 55px;
+    border-radius: 30px;
+    background-color: rgba(255,0,0,1);
+    cursor: pointer;
+}
+
+.board_square {
+    border: 2px solid #555555;
+    height: 50px;
+    width: 50px;
+}
