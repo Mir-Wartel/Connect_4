@@ -55,7 +55,12 @@ class App extends Domer {
       </section>
     `
   }
+
+
 }
+
+
+
 
 // in App is the only time we create an instance
 // of the App globally, and this is to
@@ -63,3 +68,4 @@ class App extends Domer {
 // to the DOM
 
 new App();
+
