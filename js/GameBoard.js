@@ -1,5 +1,6 @@
 class Board extends Domer {
 
+
  
   boardwrite = "";
   gameboard = [];
@@ -11,8 +12,8 @@ class Board extends Domer {
     this.gameboard = [];
     this.boardwrite = "";
 
-    
-
+    this.gameboard = [];
+        
     for (var row=0; row<=5; row++) {
       this.gameboard[row] = [];
       for (var col=0; col<=6; col++) {
@@ -28,29 +29,41 @@ class Board extends Domer {
       }}
     this.boardwrite = this.boardwrite + `</tr>
     `;
-    console.log(this.boardwrite)
+  
     }
+  
+      	
+
+    
+
+
+
+    
+
+
+ 
+
+ 
+
+
+    
+  
+  
+    
   
 
 
 
     
 
+
+  
+
   render(html) {
     return html`
-      <section>
-			<table id="game_table">
-				<thead>
-					<tr>
-						<td><button>Drop</button></td>
-						<td><button>Drop</button></td>
-						<td><button>Drop</button></td>
-						<td><button>Drop</button></td>
-						<td><button>Drop</button></td>
-						<td><button>Drop</button></td>
-						<td><button>Drop</button></td>
-					</tr>
-        
+
+	
+        <thead>
           <tr>	
 
           
@@ -58,8 +71,7 @@ class Board extends Domer {
            ${this.boardwrite}
           </tr>	
         </thead>
-      </table>
-      </section>
+
     `
   }
 }

@@ -1,6 +1,11 @@
 class App extends Domer {
   inputText = '';
-  board = new Board();
+  gameboard = []
+  dropBtnS = new Drop
+  newBoard = new Board
+  
+
+
 
 
   // if we dont want to run any code at 
@@ -33,7 +38,20 @@ class App extends Domer {
 
       </section>
       <section>
-       ${this.board}
+			 <table id="game_table">
+         <thead>
+          <tr>	
+
+           ${this.dropBtnS}
+           ${this.newBoard}
+
+
+            
+         
+            </tr>	
+          </thead>
+       </table>
+
       </section>
     `
   }
