@@ -1,8 +1,12 @@
 class App extends Domer {
   inputText = '';
-  gameboard = []
   dropBtnS = new Drop
   newBoard = new Board
+  gameboard = this.newBoard.getboard
+
+
+
+  
   
 
 
@@ -44,6 +48,7 @@ class App extends Domer {
 
            ${this.dropBtnS}
            ${this.newBoard}
+
 
 
             
