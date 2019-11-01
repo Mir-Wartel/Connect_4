@@ -6,8 +6,8 @@ class App extends Domer {
 
 
 
-  
-  
+
+
 
 
 
@@ -19,17 +19,18 @@ class App extends Domer {
   // render is a magical method, that works 
   // somewhat like toString() in an object
   render(html) {
-    
+
     // we tag our templates with html
     // all components must have a single 
     // element surrounding all other elements
     return html`
-      <section>
-        <h1>Start page</h1>
+      <div>
+       <section>
+         <h1>Start page</h1>
 
           We connect our input elements to an 
           instance-variable with the attribute 'bind'
-        <input bind="inputText" type="text">
+         <input bind="inputText" type="text">
 
           The DOM gets updated everytime these variables value changes
 
@@ -40,24 +41,25 @@ class App extends Domer {
 
           
 
-      </section>
-      <section>
-			 <table id="game_table">
-         <thead>
-          <tr>	
+        </section>
+          <section>
+			     <table id="game_table">
+             <thead>
+                <tr>	
 
-           ${this.dropBtnS}
-           ${this.newBoard}
+                  ${this.dropBtnS}
+                  ${this.newBoard}
 
 
 
             
          
-            </tr>	
-          </thead>
-       </table>
+                </tr>	
+              </thead>
+            </table>
 
-      </section>
+        </section>
+      </div>
     `
   }
 

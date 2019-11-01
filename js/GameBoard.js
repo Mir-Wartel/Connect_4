@@ -9,13 +9,11 @@ class Board extends Domer {
 
     super();
 
-    this.gameboard = [];
-    this.boardwrite = "";
 
-    this.gameboard = [];
         
     for (var row=0; row<=5; row++) {
       this.gameboard[row] = [];
+ 
       for (var col=0; col<=6; col++) {
         this.gameboard[row][col] = 0;
       }	
@@ -30,6 +28,12 @@ class Board extends Domer {
     this.boardwrite = this.boardwrite + `</tr>
     `;
   
+    }
+
+
+    set board(aray){
+      this.gameboard = aray;
+      
     }
   
       	
@@ -62,7 +66,8 @@ class Board extends Domer {
   render(html) {
     return html`
 
-	
+      
+	    <div>
         <thead>
           <tr>	
 
@@ -71,7 +76,7 @@ class Board extends Domer {
            ${this.boardwrite}
           </tr>	
         </thead>
-
+      </div>
     `
   }
 }
