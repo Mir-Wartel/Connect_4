@@ -26,24 +26,23 @@ class Drop extends Board {
 
   onChangeName(col) {
 
-    this.col = 0
-
-    var row = 0 
-
-
 
 
     this.name = 'AWESOMENESS'
 
+    var btnNum = col.target.id
+
+ 
+
 
 
     for (var row = 5; row >= 0; row--) {
-      console.log(row)
+      
 
-      if (this.gameboard[row][this.col] == 0) {
+       if (this.gameboard[row][btnNum] == 0) {
         console.log("if pased")
 
-        this.gameboard[row][this.col] = this.active_player;
+        this.gameboard[row][btnNum] = this.active_player;
 
         if (this.active_player == 1) {
 
@@ -53,15 +52,12 @@ class Drop extends Board {
 
           this.active_player = 1;
 
-        }
+        } 
+        console.log(this.gameboard)
+        
         return true;
 
       }
-
-      console.log(this.gameboard)
-      console.log(this.active_player)
-
-
 
 
     }
@@ -76,13 +72,13 @@ class Drop extends Board {
   
            <h3>This is ${this.name}</h3>
   
-           <button click=onChangeName '0'>Drop</button>
-           <button click=onChangeName (1)>Drop</button>
-           <button click=onChangeName (2)>Drop</button>
-           <button click=onChangeName (3)>Drop</button>
-           <button click=onChangeName (4)>Drop</button>
-           <button click=onChangeName (5)>Drop</button>
-           <button click=onChangeName (6)>Drop</button>
+           <button id=0 class=click_button click=onChangeName >Drop</button>
+           <button id=1 class=click_button click=onChangeName  >Drop</button>
+           <button id=2 class=click_button click=onChangeName >Drop</button>
+           <button id=3 class=click_button click=onChangeName >Drop</button>
+           <button id=4 class=click_button click=onChangeName >Drop</button>
+           <button id=5 class=click_button click=onChangeName >Drop</button>
+           <button id=6 class=click_button click=onChangeName >Drop</button>
   
          </section>
        </div>
