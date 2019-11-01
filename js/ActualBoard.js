@@ -24,7 +24,7 @@ class ActualBoard extends Domer {
     get board(){
         return this.gameboard
     }
-}
+
 
 
     player_color = [];
